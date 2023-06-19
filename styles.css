@@ -13,7 +13,7 @@ p {
 
 .sidebar {
     background-color: rgb(51, 139, 215);
-    display: grid;
+    /* display: grid; */
     grid-row: 1 / 5;
 }
 
@@ -43,6 +43,7 @@ a,
 .article-card {
     display: flex;
     flex-direction: column;
+    height: 250px;
     padding: 2em;
     border-radius: 8px;
     background: linear-gradient(to right,rgb(255,180,10) 7px, white 7px);
