@@ -8,27 +8,30 @@
 </head>
 <body>
     <div class="container">
-        <header class="profile">
-            <div>
-                <span class="header-icon">#</span>
-                <input type="text" id="search" name="search">
-                <div>
-                    <span class="header-icon">#</span>
-                    <span class="header-icon">#</span>
-                    <span class="header-icon">#</span>
-                </div>
+        <header class="profile-container">
+            <div class="profile search-field">
+                <span class="search-icon">#</span>
+                <input type="text" id="search" name="search" class="search-bar">
             </div>
-            <div>
-                <p>hi, there</p>
+            <div class="profile notifs">
+                <div class="bell">#</div>
+                <div class="profile-logo">#</div>
+                <h3>John Doggett</h3>
+            </div>
+            <div class="profile greeting">
+                <div class="profile-logo">#</div>
+                <p>Hi there,</p>
                 <h1>John Doggett (@jdogget54055)</h1>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
             </div>
+            <form action="" class="buttons" id="social-post">
+                <input type="button" value="New" class="social-button">
+                <input type="button" value="Upload" class="social-button">
+                <input type="button" value="Share" class="social-button">
+            </form>
         </header>
         <nav class="sidebar">
             <h2 class="sidebar-title">Dashboard</h2>
-            <ul>
+            <ul class="directory">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Messages</a></li>
@@ -36,14 +39,14 @@
                 <li><a href="#">Tasks</a></li>
                 <li><a href="#">Communications</a></li>
             </ul>
-            <ul>
+            <ul class="help">
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Privacy</a></li>
             </ul>
         </nav>
-        <article class="cards-container">
-            <div class="cards">
+        <article class="content-container">
+            <main class="article-container">
                 <h3 class="article-title">Your Projects</h3>
                 <div class="article-card">
                     <h4 class="section-title">Super cool project</h3>
@@ -99,10 +102,10 @@
                         <span class="icons">#</span>
                     </div>
                 </div>
-            </div>
-            <aside class="aside">
+            </main>
+            <aside class="aside-container">
                 <div class="announcements">
-                    <h3 class="section-title">Announcements</h3>
+                    <h3 class="aside-title">Announcements</h3>
                     <div class="aside-card">
                         <h4 class="section-title">Site Maintenance</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor nibh eu risus consequat, vel ultrices tortor laoreet. In hac habitasse platea dictumst. Fusce eget elit sed enim tincidunt blandit vel eu ex. Mauris in felis ut metus ullamcorper rhoncus eget at libero. Integer eu metus placerat, efficitur neque nec, vulputate velit.</p>
@@ -118,6 +121,10 @@
                 </div>
                 <div class="trending">
                     <h3 class="section-title">Trending</h3>
+                    <div class="social-media">#</div>
+                    <div class="social-media">#</div>
+                    <div class="social-media">#</div>
+                    <div class="social-media">#</div>
                 </div>
             </aside>
         </article>
