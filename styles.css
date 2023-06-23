@@ -117,23 +117,25 @@ a,
 .content-container {
     /* sets layout for its children article-container aside-container */
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr;
-    /* padding: 0 20px 0 20px; */
+    grid-template-columns: 2fr 1fr;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: lightgrey;
 }
 
 
-.article-container {
-    display: grid;
-    grid-template-rows: 50px repeat(auto-fit, minmax(75px, 200px));
-    grid-template-columns: repeat(2, 1fr);
+.article-flex-container {
+    /* display: flex;
+    flex-direction: column; */
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 }
 
+.article-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+}
 
 .article-title {
     margin-left: 20px;
@@ -142,7 +144,7 @@ a,
 }
   
 .article-card {
-    padding: 2em;
+    padding: 20px;
     border-radius: 8px;
     background: linear-gradient(to right,rgb(255,180,10) 7px, white 7px);
     background-color: white;
@@ -150,39 +152,57 @@ a,
    
 }
 
-.aside-container {
+.aside-flex-container {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    padding-right: 20px;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
 }
 
+.aside-grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/*  
 .aside-title {
     grid-row: 1 / 2;
-    grid-row: 1 / 2;
-}
+} 
 
 .announcements-container {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
 }
 
 .announcements-card {
-    background-color: white;
-    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.announcements-card:nth-child(1),
+.announcements-card:nth-child(2) {
+    border-bottom: 1px solid lightgrey;
 }
 
 .trending-container {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .trending-card {
-    background-color: white;
-    /* border: 1px solid green; */
-}
+    display: flex;
+    border-radius: 8px;
+} */
 
 .icon-container {
     padding-top: 25px;
