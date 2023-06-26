@@ -1,5 +1,6 @@
-body,h1,h2,h4, 
-p,input,ul {
+body, h1, h2,
+h4, h5, span, 
+p, input, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -108,15 +109,13 @@ a,
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: lightgrey;
+    gap: 20px;
 }
-
 
 .article-container {
     display: grid;
     grid-auto-rows: auto 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-row: 1 / 2;
-    grid-column: 1 / 2; */
 }
   
 .article-card {
@@ -125,7 +124,6 @@ a,
     background: linear-gradient(to right,rgb(255,180,10) 7px, white 7px);
     background-color: white;
     margin: 0 0 20px 20px;
-   
 }
 
 .article-title {
@@ -134,25 +132,24 @@ a,
 }
 
 .aside-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    padding-left: 20px;
     padding-right: 30px;
 }
 
-
-.aside-container p {
-    
-}
-
 .announcements-container {
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 8px;
+    padding: 20px 20px 0 20px;
+    gap: 20px;
 }
 
 .announcements-card {
-    
+    padding-bottom: 20px; 
 }
 
 .announcements-card:nth-child(1),
@@ -161,11 +158,15 @@ a,
 }
 
 .trending-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
     border-radius: 8px;
     background-color: white;
 }
 
 .trending-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     border-radius: 8px;
 }
 
