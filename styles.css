@@ -65,6 +65,11 @@ a {
     width: 30px;
 }
 
+.icons {
+    height: 30px;
+    width: 30px;
+}
+
 input[type="text"] {
     background: rgba(230, 226, 226, 0.735);
     border-radius: 8px;
