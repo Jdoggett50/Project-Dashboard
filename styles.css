@@ -6,11 +6,16 @@ p, input, ul {
     box-sizing: border-box;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 4fr;
-    min-height: 100vh;
 }
 
 .profile-container {
@@ -32,7 +37,43 @@ p, input, ul {
 
 .search-field input {
     height: 30px;
-    width: 100%;
+    width: 90%;
+}
+
+.utility-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.profile-logo {
+    height: 20px;
+    width: 20px;
+}
+
+.greeting-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.dashboard-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-icon {
+    height: 30px;
+    width: 30px;
+}
+
+input[type="text"] {
+    background: rgba(230, 226, 226, 0.735);
+    border-radius: 8px;
+    border: none;
+}
+input[type="text"]:hover, 
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid black;
 }
 
 .notifs {
@@ -59,6 +100,24 @@ p, input, ul {
     align-self: center;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    gap: 20px;
+}
+
+input[type="submit"] {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(51, 139, 215);
+    border-radius: 8px;
+    border: 1px solid rgb(51, 139, 215);;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(71, 159, 235);
+}
+
+.profile-logo {
+    /* justify-self: center; */
+    align-self: center;
 }
 
 .greeting-container p {
@@ -103,14 +162,12 @@ p, input, ul {
 }
 
 .sidebar-container li,
-a, 
+.sidebar-container a, 
 .sidebar-title
  {
     display: flex;
     gap: 20px;
     color: white;
-    list-style: none;
-    text-decoration: none;
     font-weight: 700;
     margin-right: 30px;
 }
@@ -118,14 +175,14 @@ a,
 .content-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: lightgrey;
+    background-color: rgba(230, 226, 226, 0.735);
     gap: 20px;
     padding-bottom: 50px;
 }
 
 .article-container {
     display: grid;
-    grid-auto-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
   
@@ -187,14 +244,14 @@ a,
     padding-right: 40px;
 }
 
-/* .trending-icon {
-    justify-self: center;
-    align-self: center;
-} */
-
 .icon-container {
     padding-top: 25px;
     display: flex;
     justify-content: end;
     gap: 25px;
+}
+
+.icons:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.218);
 }
